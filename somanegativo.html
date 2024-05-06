@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Não soma negativo</title>
+</head>
+<body>
+    <!--Escreva um programa que leia uma sequência de números do usuário e realize a soma desses números. Encerre a execução quando um número negativo for digitado.-->
+
+    <script>
+
+        let soma = 0;
+
+        while (true) {
+            let numero = parseFloat(prompt("Digite um número (ou um número negativo para encerrar):"));
+
+            if (numero < 0) {
+                break; 
+            }
+
+            soma += numero;
+        }
+
+        console.log("A soma dos números é: " + soma);
+
+    </script>
+
+
+</body>
+</html>

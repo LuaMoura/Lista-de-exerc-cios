@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calorias</title>
+</head>
+<body>
+    <!--Criar um programa em Java, que informe a quantidade total de calorias de uma refeição a partir do usuário que deverá informar o prato, a sobremesa e a bebida -->
+    <script>
+        let prato = prompt("Digite seu prato: ")
+        let sobremesa = prompt("Digite sua sobremesa: ")
+        let bebida = prompt("Digite sua bebida: ")
+
+        switch (prato) {
+        case "vegetariano": alert ("vegetariano 180 cal")
+        break
+        case "peixe": alert ("peixe 230 cal")
+        break
+        case "frango": alert ("frango 250 cal")
+        break
+        case "carne": alert ("carne 350 cal")
+        default: alert ("não encontrado")
+        }
+        switch (sobremesa) {
+        case "abacaxi": alert ("abacaxi 75 cal")
+        break
+        case "sorvete diet": alert ("sorvete diet 110 cal")
+        break
+        case "mouse diet": alert ("mouse diet 170 cal")
+        break
+        case "mouse de chocolate": alert ("mouse de chocolate 200 cal")
+        default: alert ("não encontrado")
+        }
+        switch (bebida) {
+        case "chá": alert ("chá 20 cal")
+        break
+        case "suco de laranja": alert ("suco de laranja 70 cal")
+        break
+        case "suco de melão": alert ("suco de melão 100 cal")
+        break
+        case "refrigerante diet": alert ("refrigerante diet 65 cal")
+        default: alert ("não encontrado")
+        }
+    </script>
+</body>
+</html>

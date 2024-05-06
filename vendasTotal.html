@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendas total</title>
+</head>
+<body>
+    <!--Escrever um programa que leia o nome de um vendedor, o seu salário fixo e o total de vendas efetuadas por ele no mês (em dinheiro). Sabendo que este vendedor ganha 15% de comissão sobre suas vendas efetuadas, informar o seu nome, o salário fixo e salário no final do mês. -->
+
+    <script>
+        let vendedor = prompt("Digite o nome do vendedor: ");
+        let salarioFixo = prompt("Digite o salário do vendedor " + vendedor + ": ");
+        let vendas = prompt("Digite o valor das vendas realizadas pelo " + vendedor + ": ");
+        let percentual = 15/100*vendas;
+        let salarioLiquido = (percentual += salarioFixo);
+
+        console.log ("O salário fixo do vendedor " + vendedor + "é: " + salarioFixo);
+        console.log ("O salário do vendedor " + vendedor + "será: " + salarioLiquido);
+        
+
+    </script>
+
+
+</body>
+</html>

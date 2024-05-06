@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABC</title>
+</head>
+<body>
+    <!--Dados três valores A, B e C, construa um programa em JAVASCRIPT, que imprima os valores de forma descendente (do maior para o menor).-->
+
+    <script>
+        let a = parseInt(prompt("Digite o valor a: "));
+        let b = parseInt(prompt("Digite o valor b: "));
+        let c = parseInt(prompt("Digite o valor c: "));
+
+        if (a >= b && a >= c) {
+            if (b >= c) {
+                console.log(a);
+                console.log(b);
+                console.log(c);
+            } else {
+                console.log(a);
+                console.log(c);
+                console.log(b);
+            }
+        } else if (b >= a && b >= c) {
+            if (a >= c) {
+                console.log(b);
+                console.log(a);
+                console.log(c);
+            } else {
+                console.log(b);
+                console.log(c);
+                console.log(a);
+            }
+        } else {
+            if (a >= b) {
+                console.log(c);
+                console.log(a);
+                console.log(b);
+            } else {
+                console.log(c);
+                console.log(b);
+                console.log(a);
+        }
+}
+
+    </script>
+
+</body>
+</html>

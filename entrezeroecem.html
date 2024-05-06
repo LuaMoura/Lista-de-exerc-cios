@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entre 0 e 100</title>
+</head>
+<body>
+    <!--Faça um programa que leia 20 números e, ao final, escreva quantos estão entre 0 e 100.-->
+
+    <script>
+
+        let numeros = 0;
+
+        for (let i = 1; i <= 20; i++) {
+            let numero = parseFloat(prompt("Digite o número " + i + ":"));
+
+            if (numero >= 0 && numero <= 100) {
+            numeros++;
+            }
+        }
+        console.log("Total de números entre 0 e 100: " + numeros);
+
+    </script>
+
+</body>
+</html>
